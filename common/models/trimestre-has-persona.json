@@ -1,0 +1,39 @@
+{
+  "name": "trimestre_has_persona",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "created": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    },
+    "modified": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    }},
+  "validations": [],
+  "relations": {
+    "rol": {
+      "type": "belongsTo",
+      "model": "rol",
+      "foreignKey": "rol_id"
+    },
+    "trimestre": {
+      "type": "belongsTo",
+      "model": "trimestre",
+      "foreignKey": "trimestre_id"
+    },
+    "personas": {
+      "type": "belongsTo",
+      "model": "persona",
+      "foreignKey": "persona_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

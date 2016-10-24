@@ -1,0 +1,33 @@
+{
+  "name": "persona-has-proyecto",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "created": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    },
+    "modified": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "proyecto": {
+      "type": "belongsTo",
+      "model": "proyecto"
+    },
+    "persona": {
+      "type": "belongsTo",
+      "model": "persona"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unimet Hub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.green-orange.min.css" />
+        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <style>
+            div.title {
+                background-color: #388E3C;
+                color: white;
+                padding: 16px;
+            }
+            .filter-form {
+                padding: 16px;
+            }
+            .title1 {
+                color: #455A64;
+            }
+            .filter-button {
+                margin-right: 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Simple header with scrollable tabs. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Unimet Hub</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Materia</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Base de Datos</a>
+                <a class="mdl-navigation__link" href="">Sistemas de Información</a>
+                <a class="mdl-navigation__link" href="">Ingeniería de Software</a>
+                <a class="mdl-navigation__link" href="">Administración de Base de datos</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="title">
+                <h3>Bernardo Garcia</h3>
+            </div>
+            <div class="filter-form">
+                <button id="trimestre" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-shadow--2dp filter-button">
+                    Trimestre: 1617-1
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="trimestre">
+                    <li class="mdl-menu__item">1617-I</li>
+                    <li class="mdl-menu__item">1617-3</li>
+                    <li disabled class="mdl-menu__item">1617-2</li>
+                    <li class="mdl-menu__item">1617-1</li>
+                </ul>
+                <!--button id="materia" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-shadow--2dp filter-button">
+                    Materia: Todas
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="materia">
+                    <li class="mdl-menu__item"><a class="mdl-navigation__link" href="">Base de Datos</a></li>
+                    <li class="mdl-menu__item"><a class="mdl-navigation__link" href="">Sistemas de Información</a></li>
+                    <li class="mdl-menu__item"><a class="mdl-navigation__link" href="">Ingeniería de Software</a></li>
+                    <li class="mdl-menu__item"><a class="mdl-navigation__link" href="">Administración de Base de datos</a></li>
+                </ul-->
+            </div>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <h4 class="title1">Proyectos</h4>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        Unimet Hub
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <div class="descripcion">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia... 
+                        </div>
+                        <hr>
+                        <div class="colaboradores">
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Acceder
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        Unimet Hub
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <div class="descripcion">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia... 
+                        </div>
+                        <hr>
+                        <div class="colaboradores">
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Acceder
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        Unimet Hub
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <div class="descripcion">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia... 
+                        </div>
+                        <hr>
+                        <div class="colaboradores">
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Acceder
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        Unimet Hub
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <div class="descripcion">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia... 
+                        </div>
+                        <hr>
+                        <div class="colaboradores">
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Acceder
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        Unimet Hub
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <div class="descripcion">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris sagittis pellentesque lacus eleifend lacinia... 
+                        </div>
+                        <hr>
+                        <div class="colaboradores">
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                            <a href="#">Bernardo Garcia</a>
+                        </div>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Acceder
+                        </a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Unimet Hub</div>
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Ingresar</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+        </div>
+    </body>
+</html>

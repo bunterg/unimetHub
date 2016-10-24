@@ -1,0 +1,49 @@
+{
+  "name": "persona",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "correo": {
+      "type": "string",
+      "required": true
+    },
+    "carnet": {
+      "type": "number",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    },
+    "modified": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trimestres": {
+      "type": "hasMany",
+      "model": "trimestre",
+      "foreignKey": "trimestre_id",
+      "through": "trimestre_has_persona"
+    },
+    "proyectos": {
+      "type": "hasMany",
+      "model": "proyecto",
+      "foreignKey": "proyecto_id",
+      "through": "persona_has_proyecto"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "trimestre",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "codigo": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    },
+    "modified": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "proyectos": {
+      "type": "hasMany",
+      "model": "proyecto"
+    },
+    "materia": {
+      "type": "belongsTo",
+      "model": "materia"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,58 @@
+{
+  "materias": [
+    {
+      "nombre":"Base de datos",
+      "codigo":"FPTSP01",
+      "trimestres":[
+        {
+          "codigo":"1617-1",
+          "proyectos": [
+            {
+              "nombre":"unimetHub",
+              "repositorio":"www.github.com",
+              "url":"10.1.30.1:3000",
+              "personas":[
+                {
+                  "nombre":"Bernardo Garcia",
+                  "correo":"b_garcia@correo.unimet.edu.ve"
+                },
+                {
+                  "nombre":"Angrés Rodriguez",
+                  "correo":"b_garcia@correo.unimet.edu.ve"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "codigo":"1617-2",
+          "proyectos": [
+            {
+              "nombre":"unimetHub",
+              "repositorio":"www.github.com",
+              "url":"10.1.30.1:3000",
+              "personas":[
+                {
+                  "nombre":"Bernardo Garcia",
+                  "correo":"b_garcia@correo.unimet.edu.ve"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre":"Sistemas de Información",
+      "codigo":"FPTSP04",
+      "trimestres":[
+        {
+          "codigo":"1617-1",
+          "proyectos": [
+
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": true
+  },
+  "materia": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "trimestre": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "proyecto": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "persona": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "persona-has-proyecto": {
+    "dataSource": "mongo",
+    "public": true
+  }
+}

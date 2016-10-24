@@ -1,0 +1,48 @@
+{
+  "name": "proyecto",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fecha_creacion": {
+      "type": "date"
+    },
+    "ultima_actualizacion": {
+      "type": "date"
+    },
+    "repositorio": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    },
+    "modified": {
+      "type": "date",
+      "required": true,
+      "defaultFn":"now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trimestre": {
+      "type": "belongsTo",
+      "model": "trimestre"
+    },
+    "personas": {
+      "type": "hasMany",
+      "model": "persona",
+      "through": "persona-has-proyecto"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
